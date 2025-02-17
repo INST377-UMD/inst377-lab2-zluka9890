@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Form</title>
+    <style>
+        body {
+            margin-left: 250px;
+            background-color: lavender;
+        }
+        button {
+            background-color: pink;
+            margin-left: 80px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: hotpink;
+            transform: scale(1.05);
+        }
+        .input-container {
+            margin: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2> What's your Favorite Color? </h2>
+    <form action="LAB2page2.html" method="GET"> <!-- Redirects to LAB2.html on submit -->
+        <div class="input-container">
+            <label>Name:</label>
+            <input type="text" name="name"><br><br>
+        
+            <label>Favorite Color:</label>
+            <input type="color" name="color"><br><br>
+        
+            <label>Message:</label>
+            <textarea name="message"></textarea><br><br>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
